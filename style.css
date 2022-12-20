@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+@font-face {
+  font-family: 'tecnologia';
+  src: url(fontes/idroid.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+  background-color: #08a38e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ header{
+  background-image: linear-gradient(360deg, #265C4B, #26b65d);
+  margin: -22px -10px -20px -10px;
+}
+
+p{
+  text-indent: 3em;
+  padding-left: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 5px;
+}
+
+.cabecalho-titulo{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+.cabecalho-paragrafo{
+  color: rgba(255, 255, 255, 0.705);
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  word-spacing: normal;
+}
+
+nav > a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-right: 30px;
+  font-size: small;
+}
+
+main{
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+}
+
+img{
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.titulo{
+  font-family: 'tecnologia', sans-serif;
+  color: #265C4B;
+  padding-top: 10px;
+  padding-left: 13px;
+}
+
+h1{
+  text-align: left;
+  padding-left: 13px;
+}
+
+h2{
+  padding-left: 13px;
+}
+
+span{
+  color: #176334;
+}
+
+.primeira-versao{
+  color: #265C4B;
+  background-image: linear-gradient(45deg, #18664d6c, #26b65d52, rgba(255, 255, 255, 0));
+}
+
+a{
+  color: #176334;
+}
+
+.novo-mascote{
+  color: #265C4B;
+  background-image: linear-gradient(45deg, #18664d6c, #26b65d52, rgba(255, 255, 255, 0));
+}
+
+.secao-video{
+  background-color: #265C4B;
+}
+
+iframe{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50em;
+}
+
+.classe-final{
+  padding-bottom: 8px;
+}
+
+article{
+  background-color: #1dc55e67;
+  margin: auto 1em auto 1em;
+  border-radius: 1em;
+  padding-bottom: 10px;
+}
+
+aside{
+  background-color: #18664d6c;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  padding: 1px 1px 1px 1px;
+  margin-top: 1em
+}
+
+.aprender{
+  color: white;
+  font-weight: bold;
+}
+
+div{
+  display: flex;
+  gap: 10em;
+}
+
+.link-rodape1{
+  color: black;
+}
+
+footer{
+  margin: auto -1em auto -1em;
+  background-color: #265C4B;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.paragrafo-footer{
+  color: white;
+  text-align: center;
+}
