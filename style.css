@@ -1,158 +1,209 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@charset "UTF-8";
 
 @font-face {
-  font-family: 'tecnologia';
-  src: url(fontes/idroid.otf);
-  font-weight: 300;
-  font-style: normal;
+  font-family: 'Android';
+  src: url(fontes/idroid.otf) format('opentype');
+  font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+  /* Declarando variaveis globais*/
+  --cor0: #c5ebd6;
+  --cor1:#83e1ad;
+  --cor2:#3ddc84;
+  --cor3: #2fa866;
+  --cor4: #1a5c37;
+  --cor5: #063d1e;
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: 'Bebas neue', cursive;
+  --fonte-android: 'Android', cursive;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
 body{
-  background-color: #08a38e;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor0);
+  font-family: var(--fonte-padrao) 
 }
 
- header{
-  background-image: linear-gradient(360deg, #265C4B, #26b65d);
-  margin: -22px -10px -20px -10px;
+a.externo::after{
+  content: '\00A0\1F517'
 }
 
-p{
-  text-indent: 3em;
-  padding-left: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  word-spacing: 5px;
-}
-
-.cabecalho-titulo{
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
+header{
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+  min-height: 150px;
   text-align: center;
+  padding-top: 40px;
+}
+
+header > h1{
   color: white;
+  font-family: var(--fonte-destaque);
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
 }
 
-.cabecalho-paragrafo{
-  color: rgba(255, 255, 255, 0.705);
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  word-spacing: normal;
+header > p{
+  color: white;
+  font-family: var(--fonte-padrao);
+  font-size: 1.2em;
+  max-width: 500px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: auto;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+  margin-bottom: 20px;
+}
+
+nav{
+  background-color: var(--cor5);
+  padding: 10px;
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.363);
 }
 
 nav > a{
+  color: var(--cor1);
+  padding: 10px;
   text-decoration: none;
-  color: white;
   font-weight: bold;
-  margin-right: 30px;
-  font-size: small;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+nav > a:hover{
+  background-color: var(--cor3);
+  color: var(--cor5);
 }
 
 main{
+  min-width: 300px;
+  max-width: 1000px;
   background-color: white;
-  margin-left: 15%;
-  margin-right: 15%;
-  
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+  box-shadow: 0px 0x 10px rgba(0, 0, 0, 0.418);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-img{
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto;
+main h1{
+  color: var(--cor5);
+  font-family: var(--fonte-android);
+  font-weight: normal;
+  font-size: 1.8em;
 }
 
-.titulo{
-  font-family: 'tecnologia', sans-serif;
-  color: #265C4B;
-  padding-top: 10px;
-  padding-left: 13px;
-  box-shadow: 1px 1px 1px black;
+main h2{
+  font-family: var(--fonte-android);
+  color: var(--cor4);
+  font-size: 1.3em;
+  font-weight: normal;
+  background-image: linear-gradient(to right, var(--cor1), transparent);
+  text-indent: 8px;
 }
 
-h1{
-  text-align: left;
-  padding-left: 13px;
-  box-shadow: 1px 1px 1px black;
+ 
+main p{
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 2em;
+  font-size: 1em;
 }
 
-h2{
-  padding-left: 13px;
-  box-shadow: 1px 1px 1px black;
-}
-
-span{
-  color: #176334;
-}
-
-.primeira-versao{
-  color: #265C4B;
-  background-image: linear-gradient(45deg, #18664d6c, #26b65d52, rgba(255, 255, 255, 0));
-}
-
-a{
-  color: #176334;
-}
-
-.novo-mascote{
-  color: #265C4B;
-  background-image: linear-gradient(45deg, #18664d6c, #26b65d52, rgba(255, 255, 255, 0));
-}
-
-.secao-video{
-  background-color: #265C4B;
-}
-
-iframe{
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 50em;
-}
-
-.classe-final{
-  padding-bottom: 8px;
-  box-shadow: 1px 1px 1px black;
-}
-
-article{
-  background-color: #1dc55e67;
-  margin: auto 1em auto 1em;
-  border-radius: 1em;
-  padding-bottom: 10px;
-  box-shadow: 1px 1px 1px black;
-}
-
-aside{
-  background-color: #18664d6c;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  padding: 1px 1px 1px 1px;
-  margin-top: 1em
-}
-
-.aprender{
-  color: white;
+main strong{
+  color: var(--cor4);
   font-weight: bold;
+  background-color: var(--cor1);
+  padding: 2px 6px;
 }
 
-div{
-  display: flex;
-  gap: 10em;
+main a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor5);
+  background-color: var(--cor1);
+  padding: 2px 6px;
 }
 
-.link-rodape1{
-  color: black;
+main a:hover{
+  text-decoration: underline;
+  color: var(--cor4);
+}
+
+main img{
+  width: 100%;
+}
+
+main img.pequena{
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+div.video{
+  background-color: var(--cor5);
+  margin-bottom: 30px;
+  margin: 0px -20px 30px -20px;
+  padding:20px;
+  padding-bottom: 58%;
+  position: relative;
+}
+
+div.video > iframe{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
 }
 
 footer{
-  margin: auto -1em auto -1em;
-  background-color: #265C4B;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
-.paragrafo-footer{
+  background-color: var(--cor5);
   color: white;
   text-align: center;
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+aside{
+  background-color: var(--cor1);
+  padding: 10px;
+  border-radius: 10px ;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.274);
+}
+
+aside > h3{
+  background-color: var(--cor4);
+  color: white;
+  padding: 5px;
+  margin: -10px -10px 0 -10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+aside  ul{
+  list-style-type: '\2714\00A0\00A0';
+  list-style-position: inside;
+  columns: 2;
+}
+
+footer a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
 }
