@@ -65,15 +65,18 @@ img{
   color: #265C4B;
   padding-top: 10px;
   padding-left: 13px;
+  box-shadow: 1px 1px 1px black;
 }
 
 h1{
   text-align: left;
   padding-left: 13px;
+  box-shadow: 1px 1px 1px black;
 }
 
 h2{
   padding-left: 13px;
+  box-shadow: 1px 1px 1px black;
 }
 
 span{
@@ -109,6 +112,7 @@ iframe{
 
 .classe-final{
   padding-bottom: 8px;
+  box-shadow: 1px 1px 1px black;
 }
 
 article{
@@ -116,6 +120,7 @@ article{
   margin: auto 1em auto 1em;
   border-radius: 1em;
   padding-bottom: 10px;
+  box-shadow: 1px 1px 1px black;
 }
 
 aside{
